@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PROTOTYPE - NOT FOR PRODUCTION -->
+<!-- Bounce Duel logo: a crosshair ring with a bullet ricocheting through it, and the name. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640" width="1024" height="640">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff9628" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff9628" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#dfe6ef"/>
+      <stop offset="1" stop-color="#9aa7ba"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0bd"/>
+      <stop offset="0.45" stop-color="#ffb13b"/>
+      <stop offset="1" stop-color="#ff6a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="640" rx="40" fill="#0d1118"/>
+  <circle cx="512" cy="200" r="190" fill="url(#glow)"/>
+  <g fill="none" stroke="#ffb347" stroke-width="16">
+    <path d="M512 94 A106 106 0 0 1 618 200" transform="rotate(12 512 200)"/>
+    <path d="M618 200 A106 106 0 0 1 512 306" transform="rotate(12 512 200)"/>
+    <path d="M512 306 A106 106 0 0 1 406 200" transform="rotate(12 512 200)"/>
+    <path d="M406 200 A106 106 0 0 1 512 94" transform="rotate(12 512 200)"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="11" stroke-linecap="butt">
+    <path d="M512 52 V90"/><path d="M512 310 V348"/><path d="M364 200 H402"/><path d="M622 200 H660"/>
+  </g>
+  <g fill="none" stroke-linejoin="miter" stroke-linecap="round">
+    <path d="M474 162 L550 184 L476 222 L532 246" stroke="#ffaa3c" stroke-width="16"/>
+    <path d="M474 162 L550 184 L476 222 L532 246" stroke="#ffffff" stroke-width="6"/>
+  </g>
+  <circle cx="532" cy="246" r="10" fill="#ff5a2a"/>
+  <g font-family="'Arial Black','Impact','Segoe UI Black',sans-serif" font-weight="900" font-style="italic" font-size="150" stroke="#0b0d11" stroke-width="16" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">
+    <text x="512" y="520" fill="url(#silver)" transform="skewX(-11) translate(100 0)"><tspan>BOUNCE </tspan><tspan fill="url(#fire)">DUEL</tspan></text>
+  </g>
+  <text x="512" y="590" text-anchor="middle" font-family="'Malgun Gothic','Noto Sans KR',sans-serif" font-weight="700" font-size="34" fill="#ffd27a">바운스 듀얼 · 총알 3발, 벽에 튕기는 1대1 결투</text>
+</svg>
